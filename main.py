@@ -17,16 +17,16 @@ title_label1.pack(pady=20)
 
 def start_game(game_name):
     root.destroy()
-    from output1 import welcome ## changed file name for easier importing of file
+    from output1 import welcome ## changed file name for easier importing of the file
     print(f"Starting {game_name}...")
 
 def start_game2(game_name):
     root.destroy()
-    from output2 import checkans ## changed file name for easier importing of file
+    from output2 import checkans ## changed file name for easier importing of the file
     print(f"Starting {game_name}...")
 def start_game3(game_name):
     root.destroy()
-    from output3 import gameLoop ## changed file name for easier importing of file
+    from output3 import gameLoop ## changed file name for easier importing of the file
     print(f"Starting {game_name}...")
 
 game1_button = tk.Button(root, text="DICTIONARIES", font=("Arial", 12), command=lambda: start_game("ONLINE MOVIE TICKET"))
