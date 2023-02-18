@@ -1,4 +1,6 @@
 # DATA STRUCTURE AND ALGORITHMS - FINAL PROJECT
+import red as red
+
 print("\nPROGRAMMED BY:")
 print("IREANNE N. OMEGA")
 print("BSCOE 2-2\n")
