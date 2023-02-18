@@ -13,9 +13,7 @@ display = pygame.display.set_mode((width, height))
 clock = pygame.time.Clock()
 
 background = (0,0,0)
-
 white = (236, 240, 241)
-
 
 #====================== color codes =================
 color = [(139, 0, 1), (158, 23, 17), (177, 46, 33), (195, 70, 50), (214, 93, 66), (233, 116, 82), (246, 129, 110),
@@ -45,7 +43,6 @@ brickW = 200
 score = 0
 speed = 3
 
-
 #====================== single brick class =================
 class Brick:
     def __init__(self, x, y, color, speed):
@@ -65,7 +62,6 @@ class Brick:
             self.speed *= -1
         if self.x + self.w < 1:
             self.speed *= -1
-
 
 #====================== complete stack =================
 class Stack:
@@ -127,7 +123,6 @@ class Stack:
             self.stack[i].y += brickH
 
         brickW = self.stack[self.initSize - 1].w
-
 
 #====================== game over =================
 def gameOver():

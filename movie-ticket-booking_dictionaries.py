@@ -86,7 +86,7 @@ def welcome():
 title=Label(root,pady=2,text="ONLINE MOVIE TICKET BOOKING SYSTEM",bd=12,bg=bg_color,fg='white',font=('arial', 25 ,'bold'),relief=GROOVE,justify=CENTER)
 title.pack(fill=X)
 
-#=================Product Frames=================
+#================= Website Frames=================
 F1=LabelFrame(root,bd=10,relief=GROOVE,text='Fill up the following',font=('arial',15,'bold'),fg='white',bg=bg_color)
 F1.place(x=0,y=80,relwidth=1)
 
@@ -111,7 +111,7 @@ n= Label(F2, text='Select a Time \n(between 1-5 PM only)', font=('times new romo
 row=2, column=0, padx=30, pady=20)
 n_txt = Entry(F2, width=20,textvariable=quantity, font='arial 15 bold', relief=SUNKEN, bd=7).grid(row=2, column=1, padx=10,pady=20)
 
-#========================Receipt Area================
+#======================== Receipt Area ================
 F3=Frame(root,relief=GROOVE,bd=10)
 F3.place(x=700,y=180,width=500,height=500)
 
@@ -122,7 +122,7 @@ scrol_y.pack(side=RIGHT,fill=Y)
 scrol_y.config(command=textarea.yview)
 textarea.pack()
 welcome()
-#=========================Buttons======================
+#========================= Buttons ======================
 btn1=Button(F2,text='Add ',font='arial 15 bold',command=additm,padx=5,pady=10,bg='white',width=15)
 btn1.grid(row=3,column=0,padx=10,pady=30)
 btn2=Button(F2,text='Generate Bill',font='arial 15 bold',command=gbill,padx=5,pady=10,bg='white',width=15)
