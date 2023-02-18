@@ -3,7 +3,6 @@ print("\nPROGRAMMED BY:")
 print("IREANNE N. OMEGA")
 print("BSCOE 2-2\n")
 
-
 import pygame
 
 pygame.init()
@@ -17,7 +16,8 @@ background = (0,0,0)
 
 white = (236, 240, 241)
 
-# Color Codes
+
+#====================== color codes =================
 color = [(139, 0, 1), (158, 23, 17), (177, 46, 33), (195, 70, 50), (214, 93, 66), (233, 116, 82), (246, 129, 110),
          (255, 145, 126), (255, 175, 156 ), ( 255, 215, 196),
          (255, 189, 170), ( 255, 199, 180 ), (255, 209, 190), (255, 219, 200 ), (255, 229, 210), (255, 239, 220),
@@ -46,7 +46,7 @@ score = 0
 speed = 3
 
 
-# Single Brick Class
+#====================== single brick class =================
 class Brick:
     def __init__(self, x, y, color, speed):
         self.x = x
@@ -67,7 +67,7 @@ class Brick:
             self.speed *= -1
 
 
-# Complete Stack
+#====================== complete stack =================
 class Stack:
     def __init__(self):
         global colorIndex
@@ -129,7 +129,7 @@ class Stack:
         brickW = self.stack[self.initSize - 1].w
 
 
-# Game Over
+#====================== game over =================
 def gameOver():
     loop = True
 
